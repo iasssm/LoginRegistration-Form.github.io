@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zen Antique', serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(125deg, #b357e4, #6e40e6);
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+}
+.container .title {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0 12px 0;
+}
+.container form .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.container form .input-box input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #cccc;
+  padding-left: 2px;
+  font-size: 15px;
+}
+.user-details .input-box .details {
+  display: block;
+  margin-bottom: 5px;
+  padding: 4px 0px;
+}
+.container form .input-box input:focus {
+  border-bottom: 2px solid grey;
+}
+/* styling button */
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+form .button input {
+  height: 100%;
+  width: 50%;
+  outline: none;
+  border: 2px solid #6e40e6;
+
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+  background: transparent;
+  color: #6e40e6;
+  border-radius: 50px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+form .button input:hover {
+  background: #6e40e6;
+  color: #fff;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    width: 100%;
+  }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scroll {
+    width: 0;
+  }
+}
+
+/* login form styling */
+
+/* .form .input-field {
+  margin-top: 30px;
+}
+.input-fieldinput{
+
+} */
+.container form .input-field {
+  background-color: #fff;
+  position: relative;
+  height: 35px;
+  width: 100%;
+  margin-top: 40px;
+}
+/* .container form .input-field input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #cccc;
+  padding-left: 2px;
+  font-size: 15px;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+} */
+.container form .input-field {
+  height: 100%;
+  width: 100%;
+}
+.container form .input-field input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #cccc;
+  padding-left: 2px;
+  font-size: 15px;
+}
+.container form .input-field input:focus {
+  border-bottom: 2px solid grey;
+}
+.login-signup {
+  text-align: center;
+}
